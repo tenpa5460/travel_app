@@ -71,4 +71,5 @@ group :test do
   gem "webdrivers"
   gem 'guard'
   gem 'guard-minitest' # もしminitestを使用している場合
+  gem "minitest-reporters"
 end
