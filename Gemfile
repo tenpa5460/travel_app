@@ -6,6 +6,9 @@ ruby "3.2.5"
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.0.4", ">= 7.0.4.3"
 
+gem "image_processing",           "1.12.2"
+gem "active_storage_validations", "0.9.8"
+
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
 
@@ -84,4 +87,8 @@ group :test do
   gem 'guard-minitest' # もしminitestを使用している場合
   gem "minitest-reporters"
   gem 'rails-controller-testing'
+end
+
+group :production do
+  gem "aws-sdk-s3", "1.114.0", require: false
 end
