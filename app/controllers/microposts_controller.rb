@@ -24,10 +24,20 @@ class MicropostsController < ApplicationController
     end
   end
 
+  # 都道府県別投稿を取得
+  def by_prefecture
+    @prefecture = params[:prefecture]
+    if @prefecture.present?
+      @feed_items = Micropost.where(prefecture: @prefecture).paginate(page: params[:page])
+    else
+      @feed_items = Micropost.none # 都道府県が選ばれていない場合は空リスト
+    end
+  end
+
   private
 
     def micropost_params
-      params.require(:micropost).permit(:content, :image)
+      params.require(:micropost).permit(:content, :image, :prefecture)
     end
 
     def correct_user

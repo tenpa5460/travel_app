@@ -17,4 +17,5 @@ Rails.application.routes.draw do
   resources :microposts,          only: [:create, :destroy]
   resources :relationships,       only: [:create, :destroy]
   get '/microposts', to: 'static_pages#home'
+  get '/prefectures', to: 'microposts#by_prefecture', as: 'prefecture_posts'
 end

@@ -1,0 +1,10 @@
+<h1>Posts about <%= @prefecture.presence || "All Prefectures" %></h1>
+
+<% if @feed_items.any? %>
+  <ol class="microposts">
+    <%= render @feed_items %>
+  </ol>
+  <%= will_paginate @feed_items %>
+<% else %>
+  <p>No posts found for this prefecture.</p>
+<% end %>

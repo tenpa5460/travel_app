@@ -1,12 +1,22 @@
 <li id="micropost-<%= micropost.id %>">
+  <!-- ユーザーのアイコンと名前 -->
   <%= link_to gravatar_for(micropost.user, size: 50), micropost.user %>
   <span class="user"><%= link_to micropost.user.name, micropost.user %></span>
+  
+  <!-- 投稿内容 -->
   <span class="content">
     <%= micropost.content %>
     <% if micropost.image.attached? %>
       <%= image_tag micropost.image.variant(:display) %>
     <% end %>
   </span>
+  
+  <!-- 都道府県を表示 -->
+  <span class="prefecture">
+    <strong>Prefecture:</strong> <%= micropost.prefecture %>
+  </span>
+
+  <!-- 投稿日時 -->
   <span class="timestamp">
     Posted <%= time_ago_in_words(micropost.created_at) %> ago.
     <% if current_user?(micropost.user) %>
