@@ -217,6 +217,172 @@ footer {
     }
 }
 
+// signupのとこ
+#signup-container {
+    background: #f4fdf4; // 薄い緑色
+    padding: 60px 20px;
+    text-align: center;
+
+    h1 {
+        font-size: 2.5em;
+        color: #2e8b57; // 鮮やかな緑
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-size: 1.2em;
+        color: #555;
+        margin-bottom: 30px;
+    }
+}
+
+.signup-box {
+    background: #fff; // 白いカード
+    padding: 40px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    text-align: left;
+    width: 100%; // 幅を親要素に合わせる
+    max-width: 600px; // 最大幅を設定
+    margin: 0 auto;
+
+    .form-control {
+        border-radius: 5px;
+        margin-bottom: 15px;
+        width: 100%; // フォーム入力欄をカードの幅に合わせる
+    }
+
+    .btn-primary {
+        background: #28a745; // 緑色
+        border: none;
+        font-size: 1.2em;
+        padding: 10px 20px;
+        border-radius: 5px;
+
+        &:hover {
+            background: #218838; // 少し濃い緑
+        }
+    }
+}
+
+// loginのスタイル
+#login-container {
+    background: #f4fdf4; // 薄い緑色
+    padding: 60px 20px;
+    text-align: center;
+
+    h1 {
+        font-size: 2.5em;
+        color: #2e8b57; // 鮮やかな緑色
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-size: 1.2em;
+        color: #555;
+        margin-bottom: 30px;
+    }
+}
+
+.login-box {
+    background: #fff; // 白いカード
+    padding: 40px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    text-align: left;
+    max-width: 400px; // サインアップ画面と同じ幅
+    margin: 0 auto;
+
+    .form-control {
+        width: 100%; // フル幅に変更
+        max-width: 400px; // 入力欄の最大幅
+        border-radius: 5px;
+        margin-bottom: 15px;
+    }
+
+    .password-group {
+        .d-flex {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .forgot-password {
+            font-size: 0.9em;
+            color: #2e8b57;
+
+            &:hover {
+                text-decoration: underline;
+                color: #218838; // 濃い緑
+            }
+        }
+    }
+
+    .btn-primary {
+        background: #28a745; // 緑色
+        border: none;
+        font-size: 1.2em;
+        padding: 10px 20px;
+        border-radius: 5px;
+        width: 100%; // ボタンの幅もサインアップ画面と統一
+
+        &:hover {
+            background: #218838; // 少し濃い緑
+        }
+    }
+}
+
+// 共通のフォームボックススタイル
+.form-container {
+    background: #f4fdf4; // 薄い緑色
+    padding: 60px 20px;
+    text-align: center;
+
+    h1 {
+        font-size: 2.5em;
+        color: #2e8b57; // 鮮やかな緑
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-size: 1.2em;
+        color: #555;
+        margin-bottom: 30px;
+    }
+
+    .form-box {
+        background: #fff; // 白いカード
+        padding: 40px 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        display: inline-block;
+        text-align: left;
+        max-width: 400px;
+        margin: 0 auto;
+
+        .form-control {
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+
+        .btn-primary {
+            background: #28a745; // 緑色
+            border: none;
+            font-size: 1.2em;
+            padding: 10px 20px;
+            border-radius: 5px;
+
+            &:hover {
+                background: #218838; // 少し濃い緑
+            }
+        }
+    }
+}
+
+
+
 /* miscellaneous */
 
 .debug_dump {
