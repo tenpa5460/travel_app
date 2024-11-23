@@ -30,18 +30,23 @@
     </div>
   </div>
 <% else %>
-  <div class="center jumbotron">
-    <h1>Welcome to the Sample App</h1>
+  <div id="welcome" class="center jumbotron">
+    <h1>Welcome to TabiShare</h1>
+    <p>次の旅先を見つけませんか？日本中の旅行者が情報を共有するミニブログへようこそ！</p>
 
-    <h2>
-      This is the home page for the
-      <a href="https://railstutorial.jp/">Ruby on Rails Tutorial</a>
-      sample application.
-    </h2>
-
-    <%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-primary" %>
+    <div class="info-box">
+      <p>
+        このアプリは旅行者が訪れた都道府県に関連する情報を投稿・共有できるミニブログプラットフォームです。
+        投稿には画像やテキストを添えることができ、地域ごとに特化した旅行情報を収集・閲覧できます。
+      </p>
+      <%= link_to "Sign up now!", signup_path, class: "btn btn-primary btn-lg" %>
+    </div>
   </div>
 
-  <%= link_to image_tag("rails.svg", alt: "Rails logo", width: "200px"),
-              "https://rubyonrails.org/" %>
+  <div class="travel-photos">
+  <%= image_tag "photo1.jpg", class: "travel-photo", alt: "Travel Photo 1" %>
+  <%= image_tag "photo2.jpg", class: "travel-photo", alt: "Travel Photo 2" %>
+  <%= image_tag "photo3.jpg", class: "travel-photo", alt: "Travel Photo 3" %>
+  <%= image_tag "photo4.jpg", class: "travel-photo", alt: "Travel Photo 4" %>
+  </div>
 <% end %>
