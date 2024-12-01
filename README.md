@@ -1,36 +1,29 @@
-# Ruby on Rails チュートリアルのサンプルアプリケーション
+# TabiShare
 
-これは、次の教材で作られたサンプルアプリケーションです。
-[*Ruby on Rails チュートリアル*](https://railstutorial.jp/)
-（第7版）
-[Michael Hartl](https://www.michaelhartl.com/) 著
+TabiShareは、旅行者が訪れた都道府県に関連する情報を投稿・共有できるミニブログプラットフォームです。  
+画像やテキストを添えて、地域ごとに特化した旅行情報を収集・閲覧することができます。
+
+## 主な機能
+
+- ユーザー登録、ログイン機能
+- 投稿作成（画像・テキスト）および編集・削除
+- 都道府県ごとの投稿検索機能
+- アカウント認証メールの送信
+
+
+## 技術スタック
+- フレームワーク: Ruby on Rails
+- データベース: PostgreSQL
+- デプロイ: Render
+- メール配信: Mailgun
+
 
 ## ライセンス
 
-[Ruby on Rails チュートリアル](https://railstutorial.jp/)内にある
-ソースコードはMITライセンスとBeerwareライセンスのもとで公開されています。
-詳細は [LICENSE.md](LICENSE.md) をご覧ください。
+TabiShareのソースコードはMITライセンスのもとで公開されています。
 
-## 使い方
 
-このアプリケーションを動かす場合は、まずはリポジトリをフォークしてください。
+## 本番環境
 
-フォークしたリポジトリで、「Code」から「Codespaces」タブに移動し、
-「Create codespace on main」をクリックすると環境構築がスタートします。
-Railsサーバーが立ち上がり、シンプルブラウザが表示されるまでしばらくお待ちください。
-
-次に、データベースへのマイグレーションを実行します。
-
-```
-$ rails db:migrate
-```
-
-最後に、テストを実行してうまく動いているかどうか確認してください。
-
-```
-$ rails test
-```
-
-詳しくは、[*Ruby on Rails チュートリアル*](https://railstutorial.jp/)
-を参考にしてください。
-
+TabiShareは以下のURLで利用可能です：  
+https://travel-app-x58z.onrender.com
